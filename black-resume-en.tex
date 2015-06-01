@@ -50,12 +50,14 @@
 \section{Education}
 \cventry{2006 - 2011}{Engineer's degree, Electrical and Electronics Engineering}{Orenburg State University}{}{}{}
 \section{Skills}
-  \cvline{Launguages:}{Python, C, C++, PHP, JavaScript, Java}
-  \cvline{Adm.:}{GNU/Linux, switches, routers}
+  \cvline{Languages:}{Python, C, C++}
+  \cvline{Databases:}{MySQL, MongoDB, Redis}
+  \cvline{VCS:}{Git, Subversion}
+  \cvline{Adm.:}{GNU/Linux}
 \section{Experience}
   \cventry{February 2008 - March 2010}{System Administrator, Engineer}{ЗАО ''Инвестэлектросвязь'' (Corbina)}{Orenburg}{}{
     \begin{itemize}
-      \item Configuration and supporting network devices of broadcast access network (last-mile).
+      \item Configuration and supporting network devices (routers, switches) of broadcast access network (last-mile).
       \item Implemented monitoring system using Nagios.
       \item Developed system searching hosts by MAC-addresses.
     \end{itemize}
@@ -78,13 +80,14 @@
   \cventry{April 2012 - April 2013}{Senior developer}{ООО ''ГДЕЭТОТДОМ.РУ''}{Moscow}{}{
     \begin{itemize}
       \item Developed framework designed for creation of backend services using Thrift as RPC framework. Service auto-discovery was implemented using Zookeeper.
-      \item Implemented some backend component, worked on system infrastructure (designing, creation, monitoring).
       \item Developed service that collect and aggregate statistics data. Recent data was stored in Redis, older data was transfered to Cassandra.
+      \item Implemented some backend component, worked on system infrastructure (designing, creation, monitoring).
     \end{itemize}
   }
   \cventry{April 2013 - February 2014}{Lead developer}{ООО ''ГДЕЭТОТДОМ.РУ''}{Moscow}{}{
     \begin{itemize}
       \item Developed distributed file storage service using Openstack Swift as storage. Also developed service for making thumbnails on top of it.
+      \item Trying to remove bottlenecks from existed services to decrease response time.
       \item Tutorship, trying to use Scrum for more fair planning.
     \end{itemize}
   }
@@ -99,15 +102,15 @@
   \cventry{April 2015 - now}{Lead developer}{Yandex}{Saint Petersburg}{}{
     \begin{itemize}
       \item Implementing notification subsystem that can send data to other services and users.
+      \item Reduce delay between incoming event and resulting notification from minutes to tens of seconds.
       \item New leader election algorithm using quantitative metrics to select best node.
     \end{itemize}
   }
 \section{Projects}
-  \cvlistitem{ThriftPool - \url{https://github.com/gdeetotdom/thriftpool}, application server for Thrift services. ThriftPool intended to serve multiple thrift services written in Python.}
+  \cvlistitem{ThriftPool - \url{https://github.com/gdeetotdom/thriftpool}, application server for Thrift services. ThriftPool intended to serve multiple thrift services written in Python using pre-fork worker model.}
 \newline{}
 \section{Other}
   \cvlistitem{Profile on GitHub - \url{https://github.com/blackwithwhite666}.}
-  \cvlistitem{I like to solve non-trivial problem and open source. I have an experience with *nix systems.}
+  \cvlistitem{I like to solve non-trivial problem and open source. I am trying to find possible solutions before doing anything and trying to measure results of my work.}
   \cvlistitem{Languages - English, Russian.}
-  \cvlistitem{VCS - GIT, SVN.}
 \end{document}
