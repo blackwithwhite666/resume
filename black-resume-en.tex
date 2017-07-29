@@ -102,14 +102,14 @@
   \cventry{April 2015 - June 2016}{Lead developer}{Yandex LLC}{Saint Petersburg}{}{
     \begin{itemize}
       \item Implementing notification subsystem that can send data to other services and users using provided by users notification rules.
-      \item Reduce delay between incoming event and resulting notification from minutes to tens of seconds or lower.
+      \item Reduce delay between incoming event and resulting notification to tens of seconds or lower.
       \item New leader election algorithm (Juggler consists of several fully replicated nodes, one of them can send notifications) using quantitative metrics to select best node.
       \item Developing a library that can pick up optimal parameters for built-in flap detector working on event series.
     \end{itemize}
   }
   \cventry{June 2016 - now}{Team leader}{Yandex LLC}{Saint Petersburg}{}{
     \begin{itemize}
-      \item My team developing three projects: event monitoring system (Juggler), network monitoring system (Netmon) and system performing complete lifecycle management of physical servers (Wall-E), that automate typical tasks and automatically heal broken servers, detecting problems with data provided by first two systems.
+      \item Our team developing three projects: event monitoring system (Juggler), network monitoring system (Netmon) and system performing complete lifecycle management of physical servers (Wall-E), that automate typical tasks and automatically heal broken servers, detecting problems with data provided by first two systems.
       \item Netmon (network monitoring system) is similar to Pingmesh. It consists of agents sending probes among themselves and backend that aggregates probe result sent by agents. It process more than 100k probes per second and detect network outages in ten of seconds.
       \item Wall-E was switched to receive data directly from Juggler and Netmon to reduce problem detection delay to minutes and distinguish network outages from server outages.
     \end{itemize}
