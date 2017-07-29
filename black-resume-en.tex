@@ -91,7 +91,7 @@
       \item Tutorship, trying to use Scrum for more fair planning.
     \end{itemize}
   }
-  \cventry{March 2014 - April 2015}{Senior developer}{Yandex}{Saint Petersburg}{}{
+  \cventry{March 2014 - April 2015}{Senior developer}{Yandex LLC}{Saint Petersburg}{}{
     \begin{itemize}
       \item Developing event monitoring system for ten of thousands of hosts named Juggler.
       \item Rewriting active checks (from monitoring nodes to clients) to C++ daemon. This made it possible to increase check frequency and system behavior in case of multiple unreachable clients.
@@ -99,15 +99,21 @@
       \item Setup continuous integration for project.
     \end{itemize}
   }
-  \cventry{April 2015 - now}{Lead developer}{Yandex}{Saint Petersburg}{}{
+  \cventry{April 2015 - June 2016}{Lead developer}{Yandex LLC}{Saint Petersburg}{}{
     \begin{itemize}
-      \item Implementing notification subsystem that can send data to other services and users.
-      \item Reduce delay between incoming event and resulting notification from minutes to tens of seconds.
-      \item New leader election algorithm using quantitative metrics to select best node.
+      \item Implementing notification subsystem that can send data to other services and users using provided by users notification rules.
+      \item Reduce delay between incoming event and resulting notification from minutes to tens of seconds or lower.
+      \item New leader election algorithm (Juggler consists of several fully replicated nodes, one of them can send notifications) using quantitative metrics to select best node.
+      \item Developing a library that can pick up optimal parameters for built-in flap detector working on event series.
     \end{itemize}
   }
-\section{Projects}
-  \cvlistitem{ThriftPool - \url{https://github.com/gdeetotdom/thriftpool}, application server for Thrift services. ThriftPool intended to serve multiple thrift services written in Python using pre-fork worker model.}
+  \cventry{June 2016 - now}{Team leader}{Yandex LLC}{Saint Petersburg}{}{
+    \begin{itemize}
+      \item My team developing three projects: event monitoring system (Juggler), network monitoring system (Netmon) and system performing complete lifecycle management of physical servers (Wall-E), that automate typical tasks and automatically heal broken servers, detecting problems with data provided by first two systems.
+      \item Netmon (network monitoring system) is similar to Pingmesh. It consists of agents sending probes among themselves and backend that aggregates probe result sent by agents. It process more than 100k probes per second and detect network outages in ten of seconds.
+      \item Wall-E was switched to receive data directly from Juggler and Netmon to reduce problem detection delay to minutes and distinguish network outages from server outages.
+    \end{itemize}
+  }
 \newline{}
 \section{Other}
   \cvlistitem{Profile on GitHub - \url{https://github.com/blackwithwhite666}.}
